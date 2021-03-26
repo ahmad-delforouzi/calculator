@@ -1,4 +1,4 @@
-# protyush29
+# calculator
 
 git clone the repo
 set up a virtual env use python>3.6
