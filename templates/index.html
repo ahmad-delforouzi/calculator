@@ -1,0 +1,48 @@
+<html>
+   <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type = "text/javascript" src="{{ url_for('static', filename='calc.js') }}"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+   </head>
+   <body>
+
+      <h1>Calculator Design Using HTML Layout</h1>
+      <div class="container">
+      <div class="header" title="Just a simple calcultor :-)">Calculator</div>
+      <input type="text" class="result" id="result">
+      <div class="first-row">
+        <input type="button" name="" value="," class="global" onclick="charValue(',')">
+        <input type="button" name="" value="C" class="green white-text global" onclick="clrLast()">
+        <input type="button" name="" value="AC" class="green white-text global" onclick="clr()">
+        <input type="button" name="" value="+" class="global" onclick="charValue('+')">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" value="7" class="global" onclick="charValue('7')">
+        <input type="button" name="" value="8" class="global" onclick="charValue('8')">
+        <input type="button" name="" value="9" class="global" onclick="charValue('9')">
+        <input type="button" name="" value="/" class="global" onclick="charValue('/')">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" value="4" class="global" onclick="charValue('4')">
+        <input type="button" name="" value="5" class="global" onclick="charValue('5')">
+        <input type="button" name="" value="6" class="global" onclick="charValue('6')">
+        <input type="button" name="" value="X" class="global" onclick="charValue('*')">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" value="1" class="global" onclick="charValue('1')">
+        <input type="button" name="" value="2" class="global" onclick="charValue('2')">
+        <input type="button" name="" value="3" class="global" onclick="charValue('3')">
+        <input type="button" name="" value="-" class="global" onclick="charValue('-')">
+      </div>
+      <div class="fourth-row">
+          <input type="button" name="" value="." class=" global" onclick="charValue('.')">
+          <input type="button" name="" value="0" class=" global" onclick="charValue('0')">
+          <input type="button" name="" value="=" class=" green white-text global" onclick="result()">
+          <input type="button" name="" value="M" class=" global" title="Provides mean of values entered. Usage :Enter 2,3,4,5 then press M " onclick="mean()">
+
+
+      </div>
+    </div>
+
+   </body>
+</html>
