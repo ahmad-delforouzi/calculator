@@ -26,7 +26,21 @@ def mean():
         data = operation["data"].split(',')
         data= [float(i) for i in data]
         mean = sum(data)/len(data)
+        return json.dumps({'result': mean}
+                          
+                          
+@app.route('/mean1', methods=['POST'])                         
+def mean1():
+    if request.method == "POST":
+        operation = json.loads(request.data)
+        data = operation["data"].split(',')
+        data= [float(i) for i in data]
+        mean = (sum(data)/len(data))+2
         return json.dumps({'result': mean})
+    
+    
+    
+    
 
 def main():
     if not os.environ.get("WERKZEUG_RUN_MAIN"):
