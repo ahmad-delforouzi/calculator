@@ -30,7 +30,7 @@ def mean():
     
     
 @app.route('/mean1', methods=['POST'])
-def mean():
+def mean1():
     if request.method == "POST":
         operation = json.loads(request.data)
         data = operation["data"].split(',')
