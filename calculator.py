@@ -26,15 +26,7 @@ def mean():
         data = operation["data"].split(',')
         data= [float(i) for i in data]
         mean = sum(data)/len(data)
-        return json.dumps({'result': mean}
-                          
-                          
-                 
-
-    
-    
-    
-    
+        return json.dumps({'result': mean})
 
 def main():
     if not os.environ.get("WERKZEUG_RUN_MAIN"):
