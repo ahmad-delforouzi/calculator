@@ -92,7 +92,7 @@ function mean1()
             $.ajax(
             {
                     type : 'POST',
-                    url : "/mean",
+                    url : "/mean1",
                     contentType: 'application/json;charset=UTF-8',
                     data : JSON.stringify({"data" : document.getElementById("result").value}),
                     success: function(response){
