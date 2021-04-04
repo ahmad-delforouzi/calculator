@@ -13,7 +13,7 @@ function clrLast()
 }
 
 //function for test of a pushbutton
-function mean()
+function rr()
 {    
     document.getElementById("result").value+="00";
 }
@@ -44,7 +44,7 @@ function result()
 }
 
 //function for mean
-function rst()
+function tt()
 {
     var value = document.getElementById("result").value;
     if ( value === "")
