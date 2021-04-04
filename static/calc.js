@@ -76,7 +76,7 @@ function mean()
 
 
 //function for mean
-function mean()
+function mean1()
 {
     var value = document.getElementById("result").value;
     if ( value === "")
