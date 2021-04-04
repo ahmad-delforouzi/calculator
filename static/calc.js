@@ -37,7 +37,7 @@ function result()
 }
 
 //function for mean
-function mean1()
+function mean()
 {
     var value = document.getElementById("result").value;
     if ( value === "")
