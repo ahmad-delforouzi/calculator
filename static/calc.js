@@ -12,6 +12,12 @@ function clrLast()
     document.getElementById("result").value = document.getElementById("result").value.slice(0, -1);
 }
 
+//function for test of a pushbutton
+{
+    var value = document.getElementById("result").value;
+}
+
+
 //function that clear the display
 function clr()
 {
@@ -75,9 +81,5 @@ function mean()
 }
 
 
-//function for mean
-function rst()
-{
-    var value = document.getElementById("result").value;
-}
+
 
