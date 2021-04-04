@@ -73,3 +73,43 @@ function mean()
     }
 
 }
+
+
+//function for mean
+function mean1()
+{
+    var value = document.getElementById("result").value;
+    if ( value === "")
+    {
+       document.getElementById("result").value = "Enter some value atleast!!";
+       setTimeout(() => { clr(); }, 500);
+    }
+    else
+    {
+        if (value.indexOf(',') > -1 && value.slice(-1) !== ",")
+        {
+
+            $.ajax(
+            {
+                    type : 'POST',
+                    url : "/mean1",
+                    contentType: 'application/json;charset=UTF-8',
+                    data : JSON.stringify({"data" : document.getElementById("result").value}),
+                    success: function(response){
+                        data = JSON.parse(response);
+                        document.getElementById("result").value = data['result'];
+                    },
+                    error: function(response){
+                        document.getElementById("result").value = response;
+                    }
+            });
+        }
+        else
+        {
+            document.getElementById("result").value = "Just hover over M.";
+            setTimeout(() => { clr(); }, 500);
+        }
+    }
+
+}
+
