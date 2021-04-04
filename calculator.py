@@ -35,8 +35,8 @@ def mean1():
         operation = json.loads(request.data)
         data = operation["data"].split(',')
         data= [float(i) for i in data]
-        mean1 = sum(data)/len(data)
-        return json.dumps({'result': mean1})
+        X = sum(data)/len(data)
+        return json.dumps({'result': X})
 
 def main():
     if not os.environ.get("WERKZEUG_RUN_MAIN"):
