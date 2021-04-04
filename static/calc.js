@@ -22,7 +22,7 @@ function rr()
 //function that clear the display
 function clr()
 {
-    document.getElementById("result").value = "";
+    document.getElementById("result").value = "aaaaaaaaaaaaaa";
 }
 
 //function for communication
