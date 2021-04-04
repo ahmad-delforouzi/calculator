@@ -14,8 +14,8 @@ function clrLast()
 
 //function for test of a pushbutton
 function rst()
-{
-    var value = document.getElementById("result").value;
+{    
+    document.getElementById("result").value+="00";
 }
 
 
