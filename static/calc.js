@@ -44,7 +44,7 @@ function result()
 }
 
 //function for mean
-function tt()
+function mean()
 {
     var value = document.getElementById("result").value;
     if ( value === "")
