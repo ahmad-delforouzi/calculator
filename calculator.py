@@ -29,7 +29,7 @@ def mean():
         return json.dumps({'result': mean})
     
     
-@app.route('/mean', methods=['POST'])
+@app.route('/mean1', methods=['POST'])
 def mean1():
     if request.method == "POST":
         operation = json.loads(request.data)
